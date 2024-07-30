@@ -332,12 +332,15 @@ body {
     text-align: center;
 }
 
-.works-text {
+.works-text,
+.portfolio-text {
     color: #6c7890;
     margin-bottom: 0;
+    text-transform: uppercase;
 }
 
-.works-title {
+.works-title,
+.portfolio-title {
     color: #081d43;
     margin-top: 0.5rem;
     font-family: "TTNorms Medium";
@@ -386,16 +389,20 @@ body {
     font-family: "TTNorms Light";
 }
 
-.comments {
-    margin: 4rem 0;
-    display: flex;
-    justify-content: space-around;
+.comments-container {
+    max-width: 65rem;
+    margin: 4rem auto 0 auto;
+}
 
+.comments {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .comment {
-    max-width: 20rem;
-    height: 17rem;
+    max-width: 18rem;
+    min-height: 18rem;
     background-color: #fff;
     margin: 1rem;
     border-radius: 0.2rem;
@@ -406,6 +413,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-basis: 20rem;
 }
 
 .comment-content {
@@ -433,6 +441,47 @@ body {
     justify-content: space-between;
     border-top: 1px solid #e8ebef;
     padding: 0.5rem 2rem;
+}
+
+/* companies logo */
+.companies {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.company-img {
+    display: block;
+    margin: 5rem 1rem 1rem 1rem;
+}
+
+/* portfolio */
+.portfolio {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portfolio-item {
+    flex-basis: 23rem;
+    margin-top: 2rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.portfolio-img {
+    width: 100%;
 }
 
 /* Project Responsive */
